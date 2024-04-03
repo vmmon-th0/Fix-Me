@@ -4,21 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6ba5d10-3e2d-4506-889c-8cde801bae02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/market/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/pom.xml" afterDir="false" />
+    <list default="true" id="f6ba5d10-3e2d-4506-889c-8cde801bae02" name="Changes" comment="feat: maven multi modules init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/src/main/java/org/broker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/broker/src/main/java/org/broker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/src/main/java/org/router/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/router/src/main/java/org/router/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +36,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "JAR Application.broker-1.0-SNAPSHOT.jar.executor": "Run",
     "JAR Application.market-1.0-SNAPSHOT.jar.executor": "Run",
+    "JAR Application.router-1.0-SNAPSHOT.jar.executor": "Run",
     "Maven.fix-simulation [clean].executor": "Run",
     "Maven.fix-simulation [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -54,10 +54,11 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JAR Application.market-1.0-SNAPSHOT.jar">
+  <component name="RunManager" selected="JAR Application.broker-1.0-SNAPSHOT.jar">
     <configuration name="broker-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/broker/target/broker-1.0-SNAPSHOT.jar" />
       <method v="2" />
@@ -66,10 +67,15 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/market/target/market-1.0-SNAPSHOT.jar" />
       <method v="2" />
     </configuration>
+    <configuration name="router-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/router/target/router-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.market-1.0-SNAPSHOT.jar" />
         <item itemvalue="JAR Application.broker-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.router-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.market-1.0-SNAPSHOT.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -89,12 +95,47 @@
       <option name="presentableId" value="Default" />
       <updated>1712003181443</updated>
       <workItem from="1712003182491" duration="1350000" />
-      <workItem from="1712094840575" duration="721000" />
+      <workItem from="1712094840575" duration="1054000" />
+      <workItem from="1712174568915" duration="1779000" />
+      <workItem from="1712176366868" duration="1982000" />
+      <workItem from="1712179980825" duration="1233000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: maven multi modules init">
+      <option name="closed" value="true" />
+      <created>1712095611745</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712095611745</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: maven multi modules init">
+      <option name="closed" value="true" />
+      <created>1712095859084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712095859084</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: maven multi modules init" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: maven multi modules init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -108,11 +149,6 @@
           <url>file://$PROJECT_DIR$/market/src/main/java/org/market/Main.java</url>
           <line>5</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/router/src/main/java/org/router/Main.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
